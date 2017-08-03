@@ -36,9 +36,9 @@ void drawTriSierpinsky(int level, int maxLevels, PVector l, PVector t, PVector r
   PVector b = PVector.add(r, PVector.div(PVector.sub(t, r), 2));
   PVector c = PVector.add(l, PVector.div(PVector.sub(r, l), 2));
 
-  //drawTriSierpinsky(level, maxLevels, a, t, b);
-  //drawTriSierpinsky(level, maxLevels, l, a, c);
-  //drawTriSierpinsky(level, maxLevels, c, b, r);
+  drawTriSierpinsky(level, maxLevels, a, t, b);
+  drawTriSierpinsky(level, maxLevels, l, a, c);
+  drawTriSierpinsky(level, maxLevels, c, b, r);
 }
 
 void mouseClicked() {
